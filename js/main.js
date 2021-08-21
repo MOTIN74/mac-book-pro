@@ -22,15 +22,7 @@ sixteenGb.addEventListener('click', function() {
     updateTotal()
 });
 
-// Grand total and total price only base value
-function updateTotal() {
-  let memoryCostTotal = Number(memoryCost.innerText);
-   let productCostTotal = Number(bestPrice.innerText);
-   let mainTotal = memoryCostTotal + productCostTotal;
-   grandTotal.innerText = mainTotal;
-  let totalCost = grandTotal.innerText;
-  totalPrice.innerText = totalCost;
-}
+
 
 // Storage cost
 const storageFirst = document.getElementById('storage-first');
@@ -51,16 +43,7 @@ storageThird.addEventListener('click', function() {
     storageCost.innerText = '180';
     updateTotal()
 });
-// Grand total & total price after changing storage cost.
-function updateTotal() {
-    let memoryCostTotal = Number(memoryCost.innerText);
-   let productCostTotal = Number(bestPrice.innerText);
-    let storageCostTotal = Number(storageCost.innerText);
-     let mainTotal = memoryCostTotal + storageCostTotal + productCostTotal;
-     grandTotal.innerText = mainTotal;
-    let totalCost = grandTotal.innerText;
-    totalPrice.innerText = totalCost;
-  }
+
 
   // Grand total & total price after changing storage cost & delivery cost.
   const freeCost = document.getElementById('free-cost');
